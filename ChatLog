@@ -25,4 +25,105 @@ Workspace: Here's an outline for a Jupyter notebook to analyze the gym's Exercis
 
 
 Create Notebook
+mhood112: Using the planets built-in dataset, create 2 graphs of each of the three plot types (relational, distributional, and categorical). These graphs should have appropriate titles, axis labels, and legends. Provide a brief explanation about which graph(s) you feel best demonstrate something notable about the data, and how it is illustrated. 
+
+Workspace: Here's an outline for a Jupyter notebook that uses the planets built-in dataset to create graphs:
+
+* **Import Required Libraries**
+* **Load the Planets Dataset**
+* **Relational Plots**
+* **Distributional Plots**
+* **Categorical Plots**
+* **Analysis of Notable Graphs**
+
+
+
+Create Notebook
+
+mhood112: using python
+
+Workspace: Here's an outline for a Jupyter notebook on using Python:
+
+* **Setup Python Environment**
+* **Basic Syntax and Data Types**
+* **Control Flow**
+* **Functions and Modules**
+* **File Handling**
+* **Error Handling**
+
+
+
+Create Notebook
+
+mhood112: Using the planets built-in dataset, create 2 graphs of each of the three plot types (relational, distributional, and categorical). These graphs should have appropriate titles, axis labels, and legends. Provide a brief explanation about which graph(s) you feel best demonstrate something notable about the data, and how it is illustrated.  using this open file
+
+GitHub Copilot: Here’s how you can use the `planets` dataset from the `seaborn` library to create the required graphs. Below is the Python code to include in your open file:
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the planets dataset
+planets = sns.load_dataset('planets')
+
+# Relational Plots
+plt.figure(figsize=(12, 6))
+
+# Scatter plot: Orbital period vs. Planet mass
+plt.subplot(1, 2, 1)
+sns.scatterplot(data=planets, x='orbital_period', y='mass', hue='method')
+plt.title('Orbital Period vs. Planet Mass')
+plt.xlabel('Orbital Period (days)')
+plt.ylabel('Mass (Jupiter Mass)')
+plt.legend(title='Detection Method', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+# Line plot: Year vs. Number of planets discovered
+plt.subplot(1, 2, 2)
+sns.lineplot(data=planets, x='year', y=planets.groupby('year')['name'].count())
+plt.title('Planets Discovered Over Time')
+plt.xlabel('Year')
+plt.ylabel('Number of Planets Discovered')
+
+plt.tight_layout()
+plt.show()
+
+# Distributional Plots
+plt.figure(figsize=(12, 6))
+
+# Histogram: Distribution of planet masses
+plt.subplot(1, 2, 1)
+sns.histplot(planets['mass'].dropna(), bins=30, kde=True)
+plt.title('Distribution of Planet Masses')
+plt.xlabel('Mass (Jupiter Mass)')
+plt.ylabel('Frequency')
+
+# Boxplot: Orbital period distribution
+plt.subplot(1, 2, 2)
+sns.boxplot(x=planets['orbital_period'].dropna())
+plt.title('Orbital Period Distribution')
+plt.xlabel('Orbital Period (days)')
+
+plt.tight_layout()
+plt.show()
+
+# Categorical Plots
+plt.figure(figsize=(12, 6))
+
+# Count plot: Number of planets discovered by method
+plt.subplot(1, 2, 1)
+sns.countplot(data=planets, y='method', order=planets['method'].value_counts().index)
+plt.title('Number of Planets Discovered by Method')
+plt.xlabel('Count')
+plt.ylabel('Detection Method')
+
+# Bar plot: Average planet mass by detection method
+plt.subplot(1, 2, 2)
+sns.barplot(data=planets, x='method', y='mass', estimator=lambda x: x.mean(skipna=True))
+plt.title('Average Planet Mass by Detection Method')
+plt.xlabel('Detection Method')
+plt.ylabel('Average Mass (Jupiter Mass)')
+plt.xticks(rotation=90)
+
+plt.tight_layout()
+plt.show()
 
