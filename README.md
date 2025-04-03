@@ -5,7 +5,7 @@ This project demonstrates the use of Seaborn to create insightful visualizations
 - **Exercise Dataset**: Visualizing exercise-related data to uncover trends and patterns.
 - **Planets Dataset**: Exploring planetary data to analyze trends in discoveries and planetary characteristics.
 
-The project is designed to showcase the power of Seaborn in creating aesthetically pleasing and informative visualizations. A consistent **pink theme** is applied across all visualizations to enhance readability and aesthetics.
+The project is designed to showcase the power of Seaborn in creating aesthetically pleasing and informative visualizations. A consistent pink theme is applied across all visualizations to enhance readability and aesthetics.
 
 ---
 
