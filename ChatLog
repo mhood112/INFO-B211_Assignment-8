@@ -1,0 +1,28 @@
+mhood112: A gym has been partenring with their local elementary school to demonstrate the effects of diet and exercise on heart rate. The data collected by the gym is contained in the Exercise_Data.csv. Create a heatmap of the pulse data. Create a categorical plot fo pulse values by diet and by type of exercise. Provide a brief explanation of what conclusions can be drawn from the data that could be give to the elementary school students. Make sure that your visualizations have appropriate titles, acis labels, and legends.
+
+Workspace: Here's an outline for a Jupyter notebook to analyze the gym's data and create visualizations:
+
+* **Import Required Libraries**
+* **Load and Explore the Dataset**
+* **Create a Heatmap of Pulse Data**
+* **Create a Categorical Plot of Pulse by Diet and Exercise Type**
+* **Provide Conclusions for Elementary School Students**
+
+
+
+Create Notebook
+
+mhood112: A gym has been partenring with their local elementary school to demonstrate the effects of diet and exercise on heart rate. The data collected by the gym is contained in the Exercise_Data.csv. Create a heatmap of the pulse data. Create a categorical plot fo pulse values by diet and by type of exercise. Provide a brief explanation of what conclusions can be drawn from the data that could be give to the elementary school students. Make sure that your visualizations have appropriate titles, acis labels, and legends.
+
+Workspace: Here's an outline for a Jupyter notebook to analyze the gym's Exercise_Data.csv:
+
+* **Import Required Libraries**
+* **Load and Inspect the Dataset**
+* **Create a Heatmap of Pulse Data**
+* **Create a Categorical Plot of Pulse Values by Diet and Exercise Type**
+* **Provide Conclusions for Elementary School Students**
+
+
+
+Create Notebook
+
